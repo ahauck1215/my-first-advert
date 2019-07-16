@@ -47,6 +47,7 @@
 
 
 
+<hr><hr>
 
 #### Part 1 - Assigning an origin-owner
 1. Assign one person to _fork_ the original repository. This will be the _origin-owner_.
