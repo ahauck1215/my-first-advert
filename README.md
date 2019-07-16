@@ -6,12 +6,8 @@
 
 ### Site Specifications
 
-* Must be themed with one of the following topics:
+* topic:
     * Music
-    * Food
-    * Movies
-    * Clothes
-
 * Must include each of the following project features:
     * 6 or more individual webpages
     * 3 or more style sheets
