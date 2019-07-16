@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My First Advert</title>
+    <head> 
+        <title>Home</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript">
+
+        $('#example-one a').click(function(e) {
+            $('#example-one a').removeClass('current_page_item');
+            $(this).addClass('current_page_item');
+        });
+        </script>
     </head>
 
 
     <body>
-        Welcome to the home page!
-    </body>
+        <ul class="group" id="example-one">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="../Page 1/1.html">Aiden's Favorite</a></li>
+                <li><a href="../Page 2/2.html">Bobby's Favorite</a></li>
+                <li><a href="../Page 3/3.html">Honesty's Favorite</a></li>
+                <li><a href="../Page 4/4.html">Aalecia's Favorite</a></li>
+                <li><a href="../Page 5/5.html">Ola's favorite</a></li>
+                <li><a href="../Page 6/6.html">Keyontays's Favorite</a></li>
+              </ul>
+              
+              <div style="margin-left:10%;padding:1px 16px;height:1000px;">
+                <h2>Money Teams Favorite Music</h2>
+                <h3>Each Page Is A Different Member</h3>
+                <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+                <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+              </div>
+            </body>
+   
 </html>
