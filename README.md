@@ -23,6 +23,15 @@
     * unordered list with at least 3 or more items
     * definition list with at least 3 or more items
 
+* Must include each of the following **per page** features.
+    * _semi-unqiue_ styling.
+	    * This means, it can borrow from a common _style sheet_, but should have additional custom styling.
+    * 3 or more `div` tags.
+    * 1 or more `a` tags.
+    * 3 or more `id` attributes
+    
+    
+
 
 * Must include at least each of the following `CSS` features on each page.
     * `border`
@@ -41,8 +50,6 @@
     * `letter-spacing`
     * `outline-color`
 
-* Each page must have a _semi-unqiue_ styling.
-    * This means, it can borrow from a common _style sheet_, but should have additional custom styling.
 
 
 
