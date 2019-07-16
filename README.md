@@ -1,22 +1,73 @@
 # My First CSS Overflow Paragraph
 
-### Part 1 - Clone the project
-* Begin by _forking_ this project into a personal repository.
-   * To do this, click the `Fork` button located at the top right of this page.
-* Navigate to your github profile to find the _newly forked repository_.
-* Clone the repository from **your account** into the `~/dev` directory.
-* Open the newly cloned project in a code editor (Visual Studio Code, for example).
+### Description
+* **Purpose** - To establish `git` and peer-programming practices.
+* **Objective** - To create a multi-page advertisement, digital flyer, or informative article.
 
-### Part 2 - Creating the Overflow Paragraph
-* Research the _css overflow_ patterns by visiting the [w3 school tutorial on css overflow](https://www.w3schools.com/css/css_overflow.asp).
-* Modify the `index.html` file by css-overflow paragraph.
+### Site Specifications
 
-### Part 3 - Submit Assignment
+* Must be themed with one of the following topics:
+    * Music
+    * Food
+    * Movies
+    * Clothes
+
+* Must include each of the following project features:
+    * 6 or more individual webpages
+    * 3 or more style sheets
+    * Each webpage should be styled by a style-sheet
+
+* Must include each of the following `HTML` features:
+    * table with at least 2 or more columns and 2 or more rows
+    * ordered list with at least 3 or more items
+    * unordered list with at least 3 or more items
+    * definition list with at least 3 or more items
+
+
+* Must include at least each of the following `CSS` features on each page.
+    * `border`
+    * `padding`
+    * `padding-top`
+    * `margin`
+    * `margin-right`
+    * `background-color`
+    * `color`
+    * `font-family`
+    * `font-color`
+    * `font-size`
+    * `text-transform`
+    * `height`
+    * `width`
+    * `letter-spacing`
+    * `outline-color`
+
+* Each page must have a _semi-unqiue_ styling.
+    * This means, it can borrow from a common _style sheet_, but should have additional custom styling.
+
+
+
+
+
+#### Part 1 - Assigning an origin-owner
+1. Assign one person to _fork_ the original repository. This will be the _origin-owner_.
+2. The _origin-owner_ should add each of the group-members as a _contributor_ to the project.
+3. Each group-member should then _clone_ the project from their _origin-owner_
+
+
+#### Part 2 - Delegating your work load
+* Delegate each member to work on an **individual file**.
+    * If files are worked on by multiple members, there will be **ugly, nasty** [merge conflicts](https://help.github.com/en/articles/about-merge-conflicts).
+
+#### Part 3 - Pushing your changes
+* As changes are made to an `.html` page, ensure that you are _pushing_ your changes.
+	* _changes_ can be _pushed_ by executing the following commands.
+		1. `git add .`
+		2. `git commit -m 'update message'`
+		3. `git push -u origin master` 
+
+### Part 4 - Submit Assignment
 * Submit the assignment by _pushing_ the changes you have made to the project.
 * Execute the following commands from the _root directory_ of the project to _push_ changes to your repository.
     * `git add .`
     * `git commit -m 'finished assignment'`
     * `git push -u origin master`
-
-### Part 4 - Modify previous projects
-* Using the information and code that you now know, modify either your [bootstrap-resume](https://github.com/CodeDifferently/my-first-bootstrap-resume) or your [multipage-project](https://github.com/CodeDifferently/my-multipage-project) to include an additional navigation bar.
