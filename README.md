@@ -1,5 +1,5 @@
 # My First CSS Advert
-
+* Click [here](./Main-Page/index.html) to view the homepage
 ### Description
 * **Objective** - To create a multi-page advertisement, digital flyer, or informative article.
 * **Purpose** - To establish `git` and peer-programming practices.
