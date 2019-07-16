@@ -1,8 +1,8 @@
 # My First CSS Overflow Paragraph
 
 ### Description
-* **Purpose** - To establish `git` and peer-programming practices.
 * **Objective** - To create a multi-page advertisement, digital flyer, or informative article.
+* **Purpose** - To establish `git` and peer-programming practices.
 
 ### Site Specifications
 
