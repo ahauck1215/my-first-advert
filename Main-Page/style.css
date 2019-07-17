@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    background-color: gray;
+    color: maroon;
   }
   
   ul {
@@ -7,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     width: 10%;
-    background-color: #f1f1f1;
+    background-color: #790000;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -15,14 +17,14 @@ body {
   
   li a {
     display: block;
-    color: #000;
+    color: gray;
     padding: 8px 16px;
     text-decoration: none;
   }
   
   li a.active {
-    background-color: seagreen;
-    color: white;
+    background-color: white;
+    color: maroon;
   }
   
   li a:hover:not(.active) {
