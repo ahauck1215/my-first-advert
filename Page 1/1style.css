@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    background-color: grey;
-    color: blue;
+    background-color: lightskyblue;
+    color: rgb(255, 60, 0);
   }
   
   ul {
@@ -31,9 +31,14 @@ body {
     background-color: #555;
     color: white;
   }
-  table, th, td {
+  table {
     border: 5px solid rgba(255, 0, 0, 0.486);
   }
 a {
-  color: Blue;
+  color: rgb(255, 60, 0);
+}
+th,td {
+  border-bottom: 5px solid rgba(255, 0, 0, 0.486);
+  border-right: 5px solid rgba(255, 0, 0, 0.486);
+ 
 }
