@@ -1,128 +1,350 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <head> <!-- header begins here -->
         <title>My First Advert</title>
-        <link rel="stylesheet" type="text/css" href="6style.css">
-    </head>
+        <link rel="stylesheet" type="text/css" href="6style.css"> <!-- link to css goes here -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <body>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
 
-/* Style the tab */
-.tab {
-  float: left;
-  border: 1px solid rgb(216, 51, 51);
-  background-color: #d81010;
-  width: 30%;
-  height: 300px;
-}
 
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: rgb(24, 21, 21);
-  padding: 22px 16px;
-  width: 1000%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
-}
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
+      <!-- ---------------------------------------------------------------------------------------------------- -->
+      <!-- javascript begins here -->
+      <script> 
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+      </script> <!-- javascript ends here -->
+      <!-- ---------------------------------------------------------------------------------------------------- -->
 
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: rgb(233, 20, 20);
-}
 
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid rgb(221, 25, 25);
-  width: 700%;
-  border-left: none;
-  height: 300px;
-}
-</style>
+
+
+
+
+
+      <!-- ---------------------------------------------------------------------------------------------------- -->
+      <!-- styling begins here -->
+      <style>
+        * {box-sizing: border-box}
+        body {font-family: "Lato", sans-serif;}
+
+        /* Style the tab */
+        .tab {
+          float: left;
+          border: 1px solid rgb(231, 12, 12);
+          background-color: #d81010;
+          width: 100%;
+          height: 300px;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+          display: block;
+          background-color: inherit;
+          color: rgb(24, 21, 21);
+          padding: 22px 16px;
+          width: 100%;
+          border: none;
+          outline: none;
+          text-align: left;
+          cursor: pointer;
+          transition: 0.3s;
+          font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+          background-color: rgb(233, 20, 20);
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+          float: left;
+          padding: 0px 12px;
+          border: 1px solid rgb(221, 25, 25);
+          width: 700%;
+          border-left: none;
+          height: 300px;
+        }
+      </style> <!-- styling ends here -->
+      <!-- ---------------------------------------------------------------------------------------------------- -->
+
+
+
 </head>
-<body>
+<!-- header ends here -->
+<!-- ---------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<body>  <!-- body begins here -->
 
 <h2>Vertical Tabs</h2>
 <p>Click on the buttons inside the tabbed menu:</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">XXXtentacion</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Ski mask the slump god</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Trippie Red</button>
+
+  <table> <!-- table begins here -->    
+
+    <tr> <!-- ROW 1 of table -->
+      <!-- table headers -->
+      <th>Artist</th>
+      <th>Music</th>
+    </tr>
+
+
+
+
+    
+    <tr> <!-- ROW 2 of table; XXXTenacion -->
+      <td> <!-- COLUMN 1 of ROW 2 -->
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">XXXtentacion</button>
+      </td>
+
+      <td> <!-- COLUMN 2 of ROW 2 -->
+        <a href="https://www.youtube.com/watch?v=iE-pXVmkz60S" target="_blank">Jocelyn Flores</a>.
+      </td>
+    </tr> <!-- ROW 2 ends here -->    
+
+
+
+
+    <tr> <!-- ROW 3 of table; SKI MASK THE SLUMP GOD-->
+      <td> <!-- COLUMN 1 of ROW 3 -->
+          <button class="tablinks" onclick="openCity(event, 'Paris')">Ski mask the slump god</button>
+      </td>
+      <td> <!-- COLUMN 2 of ROW 3 -->
+          <a href="https://www.youtube.com/watch?v=M7V0QV4nVaI" target="_blank">Faucet Failure</a>.
+      </td>
+    </tr>
+
+
+
+
+
+    <tr> <!-- ROW 4 of table; LIL PUMP-->
+      <td> <!-- COLUMN 1 of ROW 4 -->
+          <button class="tablinks" onclick="openCity(event, 'Tokyo')">Lil pump</button>
+      </td>
+      <td> <!-- COLUMN 1 of ROW 4 -->
+          <a href="https://www.youtube.com/watch?v=v_VBnNcN69Y">Be like Me</a>
+      </td>
+    </tr>
+  </table> <!-- table ends  here -->
+  
   
 </div>
 
 <div id="London" class="tabcontent">
   <h3>XXXtentacion</h3>
-  <p>His father name is Dwayne Onfroy. His mother’s name is Cleopatra. She was left with her son alone after Onfroy's father left. She had financial problems and this is the reason why Onfroy was raised by his grandmother and aunt. He has a little brother named Aiden and an older sister named Arianna. He also has a brother whose name is Coreywas not married and has one kid coming in 2018.He dated Geneva Ayala until 2016. Then he found out that she had an affair and abused her and they broke up. He denies the fact of abuse.He was an estimated net worth of $4m.His place of living is currently unknown, but he has a big house. He has shown it on his social media accounts.
-
-    He has a bunch of cars, he loves to show them to the public.He was a very melancholic person.He loves indie.He always worked hard.Before fame, he worked as a call center operator and his career grew. However, he was imprisoned and this chance was lost.His inspirations are Kurt Cobain, Cage the Elephant, The Fray, Papa Roach, Three Days Grace, Gorillaz and Coldplay.He wanted to be more than just a rapper and do something for the society.He was in youth correction center because of his aggressive behavior. In July 2016, Onfroy was arrested and charged with robbery and assault with a deadly weapon. Then, he was set free and arrested again for aggravated battery of a pregnant victim. In March 2017 he was set free.His concerts end often with incidents. He and members of his group are often assaulted. Once the rapper punches an audience member.There are long feud between two rappers. Everything started because of the line in one of Drake’s songs. They are arguing in social media until today.He doesn’t keep in touch with his mother, because she kicked him out when he was a teen.
-  
-</p>
+  <p>
+    His father name is Dwayne Onfroy. His mother’s name is
+    Cleopatra. She was left with her son alone after Onfroy's
+    father left. She had financial problems and this is the
+    reason why Onfroy was raised by his grandmother and
+    aunt. He has a little brother named Aiden and an older
+    sister named Arianna. He also has a brother whose name is
+    Coreywas not married and has one kid coming in 2018. He
+    dated Geneva Ayala until 2016. Then he found out that
+    she had an affair and abused her and they broke up. He
+    denies the fact of abuse. He was an estimated net worth
+    of $4m. His place of living is currently unknown, but he
+    has a big house. He has shown it on his social media
+    accounts. He has a bunch of cars, he loves to show them
+    to the public. He was a very melancholic person. He loves
+    indie. He always worked hard. Before fame, he worked as a
+    call center operator and his career grew. However, he was
+    imprisoned and this chance was lost. His inspirations are
+    Kurt Cobain, Cage the Elephant, The Fray, Papa 
+    Roach, Three Days Grace, Gorillaz and Coldplay. He
+    wanted to be more than just a rapper and do something 
+    for the society. He was in youth correction center because
+    of his aggressive behavior. In July 2016, Onfroy 
+    was arrested and charged with robbery and assault with
+    a deadly weapon. Then, he was set free and arrested again
+    for aggravated battery of a pregnant victim. In
+    March 2017 he was set free. His concerts end often with incidents.
+    He and members of his group are often assaulted. Once the rapper
+    punches an audience member. There are long feud between two
+    rappers. Everything started because of the line in one of
+    Drake’s songs. They are arguing in social media until today.
+    He doesn’t keep in touch with his mother, because she
+    kicked him out when he was a teen.
+  </p>
 </div>
 
 <div id="Paris" class="tabcontent">
   <h3>Ski mask the slump god</h3>
-  <p>Ski Mask was born on the 18th of April, 1996, in Florida. He has reached popularity by means of Internet. The person was raised in a typical American family about which he does not want to talk about much. When he was a kid he admired the famous rap performers, such as, for example, Fifty Cent or Logic. He is widely known by his songs like ‘Catch Me Outside’, ‘Where’s The Blow’. The rapper started his activity not so long ago, in 2015. He opened his account on the Soundcloud and rather soon became a famous performer.Ski Mask’s father’s name is unavailable.Ski Mask’s mother’s name is not known.The names of his siblings are not known. He has 2 kids. His son is called Aiden. His daughters name is unknown.The information about Ski Mask’s girlfriends is not available.His net worth is estimated at $1 Million.Ski Mask lives in Florida. The brand of Ski Mask’s car is not known.He has a tattoo on his face.He has overtaken a tour with Danny Towers.He wants do die at age 27.He Jamaican.It is called ‘Drown-in Designer’. It was posted the Soundcloud in 2015.He organized his own group which he named ‘Very Rare’.One of his collaborators and friends of the rapper is XXXTentation. Ski Mask assured him to become a part of his band.Ski Mask considers that singing is all his life. Rap is one of the most important things in his life. He has a tattoo under his eye. This tattoo is devoted to his band which he values greatly.He is always ready to associate with other people to gain success. He has created a song called ‘Just Like My Piss’ together with Madeline TYO.The name that is given to him by his parents is Stokeley Clevon Goulbourne. </p> 
+  <p>
+    Ski Mask was born on the 18th of
+    April, 1996, in Florida. He has reached
+    popularity by means of Internet. The
+    person was raised in a typical American
+    family about which he does not want to
+    talk about much. When he was a kid he
+    admired the famous rap performers, such
+    as, for example, Fifty Cent or Logic.
+    He is widely known by his songs like
+    ‘Catch Me Outside’, ‘Where’s The Blow’.
+    The rapper started his activity not so
+    long ago, in 2015. He opened his
+    account on the Soundcloud and rather
+    soon became a famous performer. Ski
+    Mask’s father’s name is unavailable.
+    Ski Mask’s mother’s name is not known.
+    The names of his siblings are not
+    known. He has 2 kids. His son is called
+    Aiden. His daughters name is unknown.
+    The information about Ski Mask’s
+    girlfriends is not available. His net
+    worth is estimated at $1 Million. Ski
+    Mask lives in Florida. The brand of Ski
+    Mask’s car is not known. He has a
+    tattoo on his face. He has overtaken a
+    tour with Danny Towers. He wants do die
+    at age 27. He's Jamaican. It is called
+    ‘Drown-in Designer’. It was posted the
+    Soundcloud in 2015. He organized his
+    own group which he named ‘Very Rare’.
+    One of his collaborators and friends of
+    the rapper is XXXTentation. Ski Mask
+    assured him to become a part of his
+    band. Ski Mask considers that singing
+    is all his life. Rap is one of the most
+    important things in his life. He has a
+    tattoo under his eye. This tattoo is
+    devoted to his band which he values
+    greatly. He is always ready to
+    associate with other people to gain
+    success. He has created a song called
+    ‘Just Like My Piss’ together with
+    Madeline TYO. The name that is given to
+    him by his parents is Stokeley Clevon
+    Goulbourne. His real is Stokeley Clevon
+    Goulbourne
+  </p> 
 </div>
 
 <div id="Tokyo" class="tabcontent">
-  <h3>Trippie Red</h3>
-  <p>Michael White IV was born on the 18th of June, 1999, in Canton which is located in the state Ohio. The early life of the singer was not very happy. He was brought up by his mother only as his father had been imprisoned. His only joy was listening to music which his mother switched on for him to amuse him. Later, when he became older, he chose a pseudonym for performing on the stage. It was Trippie Red. His career started with the meeting with Lil Wop who noticed a potential star in the beginning rapper and helped him to record his first creation named ‘Awakening My Inner Beast’. After that Michael shifted to Los Angeles to begin a serious career of a show business personality.Michael’s father’s name is unavailable. He is in jail.Michael’s mother’s name is not available.Michael had a brother. He was a hip-hop performer. He died in a road accident. The performer has another brother who is a rapper too. His pseudonym is Hippie Redd. They also have a cousin. His stage name is Famous Dex.Michael does not have a spouse.Girlfriend is Angvish.Now net worth is 4.3 million after his new record deal.He resides in Los Angeles.The brand of Mani’s car is not known.His favorite performer is Gucci Mane.His collaborator is Xxxtentation.This company is called ‘Caroline Distribution’.The fact is that Michael had a brother. He was a beginning rapper whose career was quite promising. Michael got his influence and looked up at it dreaming of achieving the same success. The stage pseudonym of his brother was Dirty Redd. When he died in a car crash, Michael decided that it was high time to replace his brother. He chose his stage name which is assonant to his brother’s one.It is called ‘A Love Letter To You’. It was released in 2017. It has been included in the first top fifty songs on charts.</p>
+  <h3>Lil pump</h3>
+  <p>
+    Lil Pump is popular American rapper. He
+    comes from Miami, Florida. Lil Pump was
+    born in 2000. His real name is Gazzy
+    Garcia. In childhood he was impressed
+    with music of such artists as Chief
+    Keef and Lil B. His best friend was
+    xxxtentacion. He inspired and
+    encouraged Lil pump to make his first
+    soundtrack “Lil Pump” which was
+    released in March, 2016. Lil pump has a
+    great fanbase. His song “D Rose” became
+    a hit and had over 20 million plays.
+    Lil Pump's famiy is quite religious so
+    his parents avoid public attention as
+    hard as they can — no wonder that their
+    names or any other information except
+    for that they are both Colombian remain
+    unknown to fans. Lil Pump is not the
+    only child in his family but his
+    siblings are out of public attention as
+    well. He is teenager, not married and
+    has no kids. No more information about
+    his girlfriends. He has been seen in
+    public with several girls and he even
+    posted quite romantic photos online but
+    he had never confirmed any serious
+    relationships. Update: He is dating a
+    girl named Molly Rollins. His net worth
+    has been estimated at $9.5m Anyway, it
+    looks Lil pump doesn’t care about
+    money. He can be seen in pictures with
+    cash packs in his hands. Lil pump
+    crashed his expensive car, but he
+    didn’t seem to be worried about the
+    car. He lives in Miami, Florida. He
+    could afford a smart Porsche. Actually
+    Lil pump is one of the fastest-rising
+    rappers. Lil Pump is still specified as
+    “underground” artist. Lil Uzi Vert
+    mentioned Lil Pump on his Twitter. His
+    special lyrical style and artistic
+    improvisation have earned him a Lil Uzi
+    Vert co-sign. Lil pump is really into
+    taking funny pictures. His Sound Cloud
+    numbers are great. Pump’s songs “Get”,
+    “Elementary”, have millions plays.
+    Multiple tattoos cover his body and
+    neck. Now he has a new tattoo on his
+    face. In many posts Lil pump is seen
+    holding his Gucci Collection. Since the
+    beginning of April Lil pump has started
+    “fight” against famous  32 year old
+    rapper J.Cole. Anyway it might be just
+    a strategic musical play with lyrical
+    shots. In 2016, he started posting his
+    reckless rap tracks online. He
+    collaborated with Lil Tex and
+    Smokepurpp. He is 19 years old. Lil
+    pump would love to continue  working
+    with  Smokepurpp. They are planning a
+    joint project. Lil pump has a dog.
+    After expulsion from school he got
+    plenty of free time. Lil pump focused
+    on music and started composing raps.
+   </p>
 </div>
-<<<<<<< HEAD
-=======
+
+
+
+
 <a href="../Main-Page/index.html">Go Home Back To Potato Land (Dont Ask)</a>
->>>>>>> 9f7e05f6830d7bb53151d0f17e50bc5761de55d8
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-   
-</body>
-</html> 
-<!DOCTYPE html>
-<html>
-<body>
 
-<audio controls>
-  <source src="horse.ogg" type="audio/ogg">
-  <source src="horse.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+  
 
-</body>
+
+
+
+</body>   <!-- body begins here -->
+<!-- ---------------------------------------------------------------------------------------------------- -->
 </html>
+  
+
+
 
