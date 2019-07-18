@@ -3,7 +3,7 @@ table {
   }
   
   table, th, td {
-    border: 10px solid black;
+    border: 6px solid black;
   }
   table{
       
@@ -15,5 +15,12 @@ table {
 body{
     color: aliceblue
 }
-
-
+#violet{
+    color:violet
+}
+#neongreen{
+color: rgb(8, 250, 0)
+}
+#red{
+    color:red
+}
